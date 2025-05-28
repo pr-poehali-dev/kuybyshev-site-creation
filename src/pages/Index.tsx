@@ -7,6 +7,7 @@ import {
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Icon from "@/components/ui/icon";
+import ThemeToggle from "@/components/ThemeToggle";
 
 const Index = () => {
   const historicalEvents = [
@@ -47,9 +48,10 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100 font-cormorant">
+    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800 font-cormorant">
+      <ThemeToggle />
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-blue-800 to-blue-900 text-white py-20 px-6">
+      <section className="relative bg-gradient-to-r from-blue-800 to-blue-900 dark:from-blue-900 dark:to-slate-900 text-white py-20 px-6">
         <div className="max-w-6xl mx-auto text-center">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
             Куйбышев
